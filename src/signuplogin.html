@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>SignUp/LogIn</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="signuplogin.css">
 <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -12,7 +12,7 @@
 			<div class="signup">
 				<form>
 					<label for="chk" aria-hidden="true">Sign up</label>
-					<input type="text" name="txt" placeholder="User name" required="">
+					<input type="number" name="reg" placeholder="Registration No" required="">
 					<input type="email" name="email" placeholder="Email" required="">
 					<input type="password" name="pswd" placeholder="Password" required="">
 					<button>Sign up</button>
@@ -20,13 +20,29 @@
 			</div>
 
 			<div class="login">
-				<form>
+				<form name="login" action="dashboard.html" onsubmit="return verify()">
 					<label for="chk" aria-hidden="true">Login</label>
-					<input type="email" name="email" placeholder="Email" required="">
+					<input type="number" name="reg" placeholder="Registration No" required="">
 					<input type="password" name="pswd" placeholder="Password" required="">
-					<button>Login</button>
+					<button type="submit" value="submit">Login</button>
 				</form>
 			</div>
 	</div>
 </body>
+<script>
+	function verify() {
+		var reg = document.forms["login"]["reg"].value;
+		var pass = document.forms["login"]["pswd"].value;
+		if (reg == 1 && pass == "one") {
+			return true;
+		}
+		else if (reg == 2 && pass == "two") {
+			return true;
+		}
+		else if (reg == 3 && pass == "three") {
+			return true;
+		}
+		return false;
+	}
+</script>
 </html>
