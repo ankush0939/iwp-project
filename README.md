@@ -1,7 +1,5 @@
 ## IWP-Project Codes
 
-# Result Automation System
+## Title:  Result Automation System
 
-# Link to our website
-
-# https://ankush0939.github.io/iwp-project/
+## Link to our website: <a href="https://ankush0939.github.io/iwp-project/">Click Here</a>
